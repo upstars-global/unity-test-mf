@@ -27,12 +27,12 @@ export default defineConfig({
   },
   build: {
     target: 'es2022',
+    assetsDir: '',
     rollupOptions: {
       output: {
-        entryFileNames: (chunk) =>
-          chunk.name === 'remoteEntry'
-            ? 'remoteEntry.js'
-            : 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
   },
