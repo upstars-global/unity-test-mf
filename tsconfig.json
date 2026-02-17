@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -12,7 +12,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src",
-      "vite.config"
-  ]
+  "include": ["src", "vite.config.ts"]
 }

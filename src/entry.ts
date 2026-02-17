@@ -1,16 +1,9 @@
-import { createApp, h } from 'vue';
-
-const version = __APP_VERSION__ as string;
-
-console.log('R2 asset loaded OK', { version });
+import { createApp } from 'vue';
+import Widget from './Widget.vue';
 
 if (typeof document !== 'undefined') {
   const root = document.getElementById('app');
   if (root) {
-    createApp({
-      render() {
-        return h('div', `TestWidget v${version}`);
-      },
-    }).mount(root);
+    createApp(Widget).mount(root);
   }
 }
