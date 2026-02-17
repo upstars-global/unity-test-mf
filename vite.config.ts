@@ -26,6 +26,6 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(version),
   },
   build: {
-    target: 'es2020',
+    target: 'es2022',
   },
 });
